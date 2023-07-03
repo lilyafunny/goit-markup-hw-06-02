@@ -16,6 +16,23 @@ max-width: 426px;
     font-size: 36px;
 }
 
+.modal {
+    width: 408px;
+}
+
+.check-text .span-icon-modal {
+    height: 16px;
+    width: 16px;
+}
+
+.line{
+    display: flex;
+}
+
+.link-check-modal {
+    padding-left: unset;
+}
+
 /*---------------------------------------------------*/
 
 }
@@ -73,7 +90,7 @@ text-align:left;
 .footer-conteiner {
     gap: 72px 24px;
     justify-content: left;
-    padding-left: 108px;
+    width: 584px;
 }
 
 .footer-media-title{
@@ -120,7 +137,8 @@ text-align:left;
 }
 
 .address-list {
-    display: block;
+    display: flex;
+flex-direction: column;
     gap: 12px;
 }
 
@@ -142,7 +160,7 @@ text-align:left;
     background-color: var(--active-link-color);
     border-radius: 2px;
     position: absolute;
-    top: 45px;
+    top: 50px;
 }
 
 
@@ -279,6 +297,7 @@ height: 64px;
 
 .address-list {
     display: flex;
+    flex-direction: unset;
     gap: 40px;
 }
 
@@ -293,6 +312,10 @@ height: 64px;
 
 .header-conteiner {
     padding: 24px 15px;
+}
+
+.active-page::after {
+    top: 45px;
 }
 
 }
