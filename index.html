@@ -19,44 +19,120 @@
     <title>Webstudio</title>
   </head>
   <body>
-    <!--
-      <header class="header">
-        <div class="conteiner header-conteiner">
-          <nav class="header-nav">
-            <a href="./index.html" class="logo link"
-              >Web<span class="part-logo">Studio</span></a
-            >
-            <ul class="header-list list">
-              <li class="header-item">
-                <a class="header-link link active-page" href="./index.html"
+    <header class="header">
+      <div class="conteiner header-conteiner">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo link"
+            >Web<span class="part-logo">Studio</span></a
+          >
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link active-page" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="address-list list">
+            <li class="address-item">
+              <a class="address-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button type="button" class="hum-button">
+          <svg class="hum-button-icon" data-menu-open>
+            <use href="./images/icons.svg#icon-charm_menu-hamburger-1-1"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="mob-menu-close" data-menu-close>
+            <svg class="mob-menu-icon">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav">
+            <ul class="mob-menu-list list">
+              <li class="mob-item">
+                <a class="mob-link link mob-active" href="./index.html"
                   >Studio</a
                 >
               </li>
-              <li class="header-item">
-                <a class="header-link link" href="./portfolio.html">Portfolio</a>
+              <li class="mob-item">
+                <a class="mob-link link" href="./portfolio.html">Portfolio</a>
               </li>
-              <li class="header-item">
-                <a class="header-link link" href="">Contacts</a>
+              <li class="mob-item">
+                <a class="mob-link link" href="">Contacts</a>
               </li>
             </ul>
           </nav>
-          <address class="address">
-            <ul class="address-list list">
-              <li class="address-item">
-                <a class="address-link link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+        </div>
+        <div>
+          <address class="mob-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a class="mob-address-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
                 >
               </li>
-              <li class="address-item">
-                <a class="address-link link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
+              <li class="mob-address-item">
+                <a
+                  class="mob-gmail-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
                 >
               </li>
             </ul>
           </address>
+          <ul class="mob-list list">
+            <li>
+              <a href="" class="mob-icon-link">
+                <svg class="icon-mob">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="mob-icon-link">
+                <svg class="icon-mob">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="mob-icon-link">
+                <svg class="icon-mob">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="mob-icon-link">
+                <svg class="icon-mob">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-      </header> 
-    -->
+      </div>
+    </header>
+
     <main>
       <section class="hero">
         <div class="conteiner hero-contriner">
@@ -129,6 +205,7 @@
           <ul class="about-list list">
             <li class="about-item">
               <img
+                srcset="./images/monitor.jpg 1x, ./images/monitor-2x.jpg 2x"
                 src="./images/monitor.jpg"
                 alt="computer monitor with statistics image"
                 width="360"
@@ -136,6 +213,10 @@
             </li>
             <li class="about-item">
               <img
+                srcset="
+                  ./images/smartphone.jpg    1x,
+                  ./images/smartphone-2x.jpg 2x
+                "
                 src="./images/smartphone.jpg"
                 alt="smartphone with chat tabs open"
                 width="360"
@@ -143,6 +224,10 @@
             </li>
             <li class="about-item">
               <img
+                srcset="
+                  ./images/smartphone_laptop.jpg    1x,
+                  ./images/smartphone_laptop-2x.jpg 2x
+                "
                 src="./images/smartphone_laptop.jpg"
                 alt="smartphone and laptop"
                 width="360"
@@ -158,6 +243,10 @@
           <ul class="teame-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/mark_guerrero.jpg    1x,
+                  ./images/mark_guerrero-2x.jpg 2x
+                "
                 src="./images/mark_guerrero.jpg"
                 alt="Product designer Mark Guerrero"
                 width="264"
@@ -199,6 +288,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/tom_ford.jpg 1x, ./images/tom_ford-2x.jpg 2x"
                 src="./images/tom_ford.jpg"
                 alt="Frontend developer Tom Ford"
                 width="264"
@@ -240,6 +330,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/camila_garcia.jpg    1x,
+                  ./images/camila_garcia-2x.jpg 2x
+                "
                 src="./images/camila_garcia.jpg"
                 alt="Marketing Camila Garcia"
                 width="264"
@@ -281,6 +375,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/daniel_wilson.jpg    1x,
+                  ./images/daniel_wilson-2x.jpg 2x
+                "
                 src="./images/daniel_wilson.jpg"
                 alt="UI designer Daniel Wilson"
                 width="264"
@@ -528,5 +626,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
