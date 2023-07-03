@@ -90,7 +90,7 @@ text-align:left;
 .footer-conteiner {
     gap: 72px 24px;
     justify-content: left;
-    width: 584px;
+    max-width: 584px;
 }
 
 .footer-media-title{
